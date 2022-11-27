@@ -1,5 +1,4 @@
-import datetime
-
+from datetime import datetime
 from flask import Flask, render_template
 from flask_sqlalchemy import SQLAlchemy
 
@@ -10,7 +9,7 @@ db =SQLAlchemy(app)
 
 
 class Project(db.Model):
-    id = db.Column(db.integer, primary_key=True)
+    id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String(100), nullable=False)
     category = db.Column(db.String(100), nullable=False)
     link = db.Column(db.String(100), nullable=True)

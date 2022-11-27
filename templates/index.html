@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./styles/main.css">
+    <!-- <link rel="stylesheet" href="./styles/main.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/c72cdf04f7.js" crossorigin="anonymous"></script>
-    
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/normalize.css') }}"/>
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/main.css') }}"/>
     
     <title>Moje zainteresowania</title>
 </head>
@@ -53,7 +54,7 @@
             <div class="columns-container columns-2-container">
                 
                 <div class="columns about-image">
-                    <img class="about-image" src="./images/unnamed.jpg" alt="zdjęcie">
+                    <img class="about-image" src="{{url_for('static', filename='/images/unnamed')}}" alt="zdjęcie">
                 </div>
 
                 <div class="columns">
@@ -106,7 +107,7 @@
             <div class="columns-container columns-3-container">
                 <div class="columns photos-section">
                     <figure>
-                        <img src="images/IMG-3591.jpg" alt="">
+                        <img src="{{url_for('static', filename='images/IMG-3591.jpg')}}" alt="">
                         <figcaption>
                             Zdjęcie wykonane w wakacje w <strong>Helu</strong>
                         </figcaption>
@@ -114,7 +115,7 @@
                 </div>
                 <div class="columns photos-section">
                     <figure>
-                        <img src="./images/IMG-6458.jpg" alt="">
+                        <img src="{{url_for('static', filename='images/IMG-6458.jpg')}}" alt="">
                         <figcaption>
                             Zdjęcie wykonane we wrześniu w <strong>Łodzi</strong>
                         </figcaption>
@@ -122,7 +123,7 @@
                 </div>
                 <div class="columns photos-section">
                     <figure>
-                        <img src="images/IMG-4988.jpg" alt="">
+                        <img src="{{url_for('static', filename='images/IMG-4988.jpg')}}" alt="">
                         <figcaption>
                             Zdjęcie wykonane w <strong>moim ogrodzie</strong>
                         </figcaption>
@@ -130,7 +131,7 @@
                 </div>
                 <div class="columns photos-section">
                     <figure>
-                        <img src="images/unnamed (1).jpg" alt="">
+                        <img src="{{url_for('static', filename='images/unnamed (1).jpg')}}" alt="">
                         <figcaption>
                             Zdjęcie wykonane w maju, zaraz po adopcji Freji
                         </figcaption>
@@ -138,14 +139,14 @@
                 </div>
                 <div class="columns photos-section">
                     <figure>
-                        <img src="images/IMG-1440.jpg" alt="">
+                        <img src="{{url_for('static', filename='images/IMG-1440.jpg')}}" alt="">
                         <figcaption>
                             Zdjęcie wykonane w wakacje w <strong>Kuźnicy</strong> 
                     </figure>
                 </div>
                 <div class="columns photos-section">
                     <figure>
-                        <img src="images/IMG_20220114_223130_edit_237835756520478.jpg" alt="">
+                        <img src="{{url_for('static', filename='images/IMG_20220114_223130_edit_237835756520478.jpg')}}" alt="">
                         <figcaption> 
                             Zdjęcie wykonane w <strong>Bieszczadach</strong> w kwietniu
                         </figcaption>
@@ -204,6 +205,6 @@
         
     </footer>
 
-    <script src="./script.js"></script>
+    <script src="{{url_for('static', filename='scripts/./script.js')}}"></script>
 </body>
 </html>
