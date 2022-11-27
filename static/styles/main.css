@@ -2,7 +2,7 @@
 
 /*zamienne kolory*/
 :root {
-    --zielony:#a1986d;
+    --zielony:#748363;
     --czarny:#000000;
     --brąz:#653410;
     --ziemisty:#a59175;
@@ -466,4 +466,27 @@ section {
 .copyright {
     font-size: 18px;
     color: #344636;
+}
+
+.projects-section form {
+	margin: 20px 0;
+}
+.add-button {
+	color: #ffffff;
+	background-color: #748363;
+	border: 3px solid #404b34;
+	text-decoration: none;
+	padding: 10px 20px;
+	margin: 0 10px;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+.add-button:hover {
+	color: #404b34;
+	background-color: #ffffff;
+}
+
+.projects-section input {
+	padding: 10px 10px;
 }
